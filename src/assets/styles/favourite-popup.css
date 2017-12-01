@@ -71,6 +71,7 @@
     width: calc(100% - 100px);
     float: right;
     padding-left: 15px;
+    box-sizing: border-box;
 }
 .search-item-container.favorites-list .search-item-add-favourite{
     margin-left: 15px;
