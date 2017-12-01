@@ -22,7 +22,7 @@ All of the useful codes are in the "src" folder. as you see there are separate f
 
 In the assets folder I use styles directly from the component because this method have a nice performance to render the styles on the page. I used [Remo Color Theme](https://color.adobe.com/Retro-color-theme-10216393/) to get a nice color harmony.
 
-Two folders components and containers are react components that I make them for the application. I used functional components for the containers.
+Two folders components and containers are react components that I made them for the application. I used functional components for the containers.
 
 So in the below we want to explain critical files and folders:
 
