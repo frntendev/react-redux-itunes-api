@@ -1,0 +1,65 @@
+.favourite-button-container {
+    width: 60px;
+    height: 50px;
+    background: #EE9D31;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition:0.3s all ease;
+}
+.favourite-button-container.disabled {
+    pointer-events: none;
+    background: #b9b9b9;
+}
+.favourite-button-container.disabled .icon-heart {
+    color: #5d5d5d;
+}
+.favourite-button-container.disabled .favourite-count {
+    color: #b9b9b9;
+    border: 2px solid #b9b9b9;
+    background: #5d5d5d;
+}
+.favourite-button-container.changing .icon-heart {
+    color: #8a201e;
+    font-size: 2rem;
+}
+
+.favourite-button-container.changing .favourite-count {
+    background: #8a201e;
+}
+
+.favourite-button-container:hover {
+    background: #DF922F;
+}
+.favourite-button-container .icon-heart {
+    font-size: 1.5rem;
+    color: #5A392B;
+    transition: 0.2s all ease;
+}
+.favourite-button-container .favourite-count {
+    background: #5A392B;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: #EE9D31;
+    font-family: sans-serif;
+    border: 2px solid #EE9D31;
+}
+@media screen and (max-width: 480px) {
+    .favourite-button-container .favourite-count{
+        right: 3px;
+    }
+}

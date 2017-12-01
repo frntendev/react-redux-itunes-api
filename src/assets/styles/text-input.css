@@ -1,0 +1,62 @@
+.text-input-container{
+    background: #ececec;
+    height: 50px;
+    display: flex;
+}
+.text-input-container.width-1{
+    width: 100%;
+}
+.text-input-container.width-2{
+    width: 49%;
+    margin-right: 2%;
+}
+.text-input-container.width-3{
+    width: 32%;
+    margin-right: 2%;
+}
+.text-input-container .text-input{
+    width: calc(100% - 60px);
+    height: inherit;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #909090;
+    padding-left: 15px;
+    background: #fff;
+}
+.text-input-container .text-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #d8d8d8;
+}
+.text-input-container .text-input::-moz-placeholder { /* Firefox 19+ */
+    color: #d8d8d8;
+}
+.text-input-container .text-input-btn{
+    width: 60px;
+    height: inherit;
+    border: none;
+    outline: none;
+    background: #7DBEA5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease;
+}
+.text-input-container .text-input-btn:hover{
+    background: #68a890;
+}
+.text-input-container .text-input-btn .icon-search{
+    font-size: 1.5rem;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .text-input-container.width-3{
+        width: 49%;
+        margin-right: 2%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .text-input-container.width-3{
+        width: 100%;
+    }
+}

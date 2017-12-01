@@ -1,0 +1,38 @@
+@import "font-faces.css";
+.home-page-container .header{
+    background: #F1E0B1;
+    padding: 15px;
+}
+.home-page-container .body{
+    padding: 15px;
+}
+.home-page-container .inside-container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+}
+.home-page-container .search-box-container{
+    display: flex;
+}
+.home-page-container .search-items-container{
+    margin-top: 15px;
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    height: inherit;
+}
+.home-page-container .search-items-container::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.home-page-container .search-items-container .search-title{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    font-family: sans-serif;
+}
+.home-page-container .search-items-container .search-title.warn{
+    color: #EE9D31;
+}
