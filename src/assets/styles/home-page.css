@@ -36,3 +36,12 @@
 .home-page-container .search-items-container .search-title.warn{
     color: #EE9D31;
 }
+@media screen and (max-width: 480px) {
+  .home-page-container .header{
+    position: fixed;
+    z-index: 9;
+}
+    .home-page-container .search-items-container{
+    margin-top: 80px;
+    }
+}
